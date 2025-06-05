@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Carousel, Quiz & Jokes</h1>
+  </header>
+
+  <main>
+    <!-- Image Carousel -->
+    <section class="carousel-container">
+      <h2>Carousel Gallery</h2>
+      <div class="carousel">
+        <button class="carousel-btn left">&#10094;</button>
+        <img id="carousel-image" src="https://picsum.photos/seed/1/600/400" alt="Carousel Image" />
+        <button class="carousel-btn right">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Joke Generator -->
+    <section class="joke-section">
+      <h2>Need a Laugh?</h2>
+      <button id="get-joke">Get a Random Joke</button>
+      <p id="joke-output">Click the button to load a joke!</p>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+      <h2>Interactive Knowledge Quiz</h2>
+      <div id="quiz-container">
+        <p id="question">Loading question...</p>
+        <div id="options"></div>
+        <button id="next-btn">Next</button>
+        <p id="score">Score: 0</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Interactive App. Designed for All Devices.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
